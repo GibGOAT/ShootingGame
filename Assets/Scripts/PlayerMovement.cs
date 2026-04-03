@@ -1,26 +1,41 @@
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D _rigidbody2D;
 
-    private float xSpeed;
-    private float ySpeed;
+private Rigidbody2D _rigidbody2d;
 
-    public float speed = 3;
+private float _xSpeed;
+private float _ySpeed;
+public float speed = 3;
 
-    private string InputX = "Horixontal";
-    private string InputY = "Vertical";
+ private string InputX = "Horizontal";
+ private string InputY = "Vertical";
 
     private void Start()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-    }
-    private void Update()
-    {
-        xSpeed = Input.GetAxis("InputX");
-        ySpeed = Input.GetAxis("InputY");
-        _rigidbody2D.velocity = new Vector2(xSpeed, ySpeed) * speed;
+        _rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
+
+    private void Update()
+    {
+        _xSpeed = Input.GetAxis(InputX);
+        _ySpeed = Input.GetAxis(InputY);
+
+        _rigidbody2d.velocity = new Vector2(_xSpeed, _ySpeed) * speed;
+    }
+
+
+
+
+
+
+
+
 }
+
+
+
+
