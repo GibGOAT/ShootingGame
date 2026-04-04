@@ -748,6 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 7854287240566403132, guid: 1ea6bd9350d50894899d6d0e9622592e, type: 3}
+  prefab2: {fileID: 0}
   bulletTrash: {fileID: 1629114352}
   bulletspawn: {fileID: 1442179157}
 --- !u!1 &396652744
